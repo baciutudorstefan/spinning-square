@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: rgb(30, 30, 30);
+                color: rgb(200, 200, 200);
+                font-family: 'Lato', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            #circle{
+                width: 50px;
+                height: 50px;
+                left: 0px;
+                border-radius: 10px;
+                background-color: crimson;
+                position: relative;
+                animation:spin 4s linear infinite;
+            }
+
+            #web-animation{
+                background: black;
+                border: crimson solid 4px;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                margin-top: 5em;
+                margin-bottom: 4em;
+            }
+
+        </style>
+    </head>
+    <body style="text-align: center;">
+
+        <!-- <canvas id="animated-canvas" width="600" height="400"></canvas> -->
+
+
+        <div id="web-animation"></div>
+
+
+        <script src="script.js"></script>
+
+        <button onclick="rotatingSquare.play()" type="button">Play</button>
+        <button onclick="rotatingSquare.pause()" type="button">Pause</button>
+        <button onclick="rotatingSquare.playbackRate+=0.2" type="button">Speed UP</button>
+        <button onclick="rotatingSquare.playbackRate-=0.2" type="button">Slow DOWN</button>
+    </body>
+</html>
